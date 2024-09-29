@@ -65,7 +65,7 @@ services:
     ports: 
       - "9000:9000"
     environment:
-      KAFKA_BROKER_CONNECT: "kafka1:19091" # 카프카 하나만 넣으면 됨
+      KAFKA_BROKER_CONNECT: "kafka1:9091" # 카프카 하나만 넣으면 됨
     depends_on: # 카프카 1-3이 모두 실행된 뒤 실행되도록 의존성 추가
       - kafka1
       - kafka2
